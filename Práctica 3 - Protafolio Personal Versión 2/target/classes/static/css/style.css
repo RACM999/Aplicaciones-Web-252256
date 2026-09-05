@@ -1,0 +1,88 @@
+*{
+    font-family: Arial, "Arial Black";
+
+
+}
+
+body{
+    background-color: #e4e4ed;
+
+    color: #333;
+
+    line-height: 1.6;
+
+    margin: 0;
+    padding: 0;
+}
+
+#yo {
+    background-color: #0056b3 !important;
+    color: white !important;
+    padding: 15px !important;
+    margin: 20px !important;
+    border-radius: 8px !important;
+}
+
+#formacion{
+    background-color: #FFF;
+    padding: 20px 10px 15px 20px;
+    margin: 20px 10px 15px 20px;
+    border-radius: 8px;
+}
+
+#sobremi, #habilidades, #proyectos, #contacto{
+    background-color: #FFFFFF;
+    padding: 20px ;
+    margin: 20px ;
+    border-radius: 8px;
+    box-shadow: 0 2px  4px rgba(0,0,0, 0.1);
+
+}
+
+.destacado{
+    background-color: #e2f0ff;
+    padding:  15px;
+    border-left: 4px solid blue;
+    font-weight: 500;
+
+
+}
+
+.tabla-bonita th, tabla-bonita td{
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+
+
+
+
+}
+
+.tabla-bonita th{
+    background-color: #0056b3;
+    color: #FFFFFF;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.menu a {
+    background-color: #0056b3;
+    color: white !important;
+    text-decoration: none;
+    padding: 12px 20px;
+    border: 1px solid #004494;
+    border-radius: 5px;
+    font-size: 17px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #003f88;
+}
