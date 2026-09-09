@@ -1,0 +1,193 @@
+*{
+    font-family: Arial, "Arial Black";
+
+
+}
+
+body{
+    background-color: #0F172A;
+
+    color: #E2E8F0;
+
+    line-height: 1.6;
+
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+
+    /*
+        px: Unidad de Medida Absoluta
+        %: relativo al contenedor padre
+        vw: relativo al ancho total de la pantalla del navegador
+        vh: relativo al alto total de la pantalla del navegador
+        dvh: relativo al tamaño de la fuente raiz
+        em: relativo ala fuente del dispositivo
+        fr: Es una fraccion pero de un grid
+        rem: relativo a la fuente del dispositivo y al tamaño del contenedor
+     */
+
+}
+
+#yo {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    padding: 15px !important;
+    margin: 20px !important;
+    border-radius: 8px !important;
+}
+
+#formacion{
+    background-color: #1E293B;
+    padding: 20px 10px 15px 20px;
+    margin: 20px 10px 15px 20px;
+    border-radius: 8px;
+}
+
+#sobremi, #habilidades, #proyectos, #contacto{
+    background-color: #1E293B;
+    padding: 20px ;
+    margin: 20px ;
+    border-radius: 8px;
+    box-shadow: 0 2px  4px rgba(0,0,0, 0.1);
+
+}
+
+.destacado{
+    background-color: var(--secondary-color);
+    padding:  15px;
+    border-left: 4px solid var(--primary-color);
+    font-weight: 500;
+
+
+}
+
+.tabla-bonita th, tabla-bonita td{
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+
+
+
+
+}
+
+.tabla-bonita th{
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.menu a {
+    background-color: var(--primary-color);
+    color: white !important;
+    text-decoration: none;
+    padding: 12px 20px;
+    border: 1px solid #004494;
+    border-radius: 5px;
+    font-size: 17px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #003f88;
+}
+
+*{
+    box-sizing: border-box;
+
+}
+
+:root{
+    --primary-color: #2563EB;
+    --secondary-color: #1E293B;
+    --text-color: #333;
+    --border-radius: 8px;
+    --spancing: 20px;
+    --background-color: #f4f4f9;
+
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    padding: var(--spancing);
+    text-align: center;
+
+
+
+}
+
+
+header h1 {
+    margin-bottom: 5px;
+    padding: 20px;
+
+}
+
+main{
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: var(--spancing);
+    padding: var(--spancing);
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+section{
+    background-color: #FFFFFF;
+    padding: var(--spancing);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px  6px rgba(0,0,0, 0.05);
+
+
+}
+
+.foto{
+    float: right;
+    margin: 15px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+
+}
+
+/* Pseudo class be like:
+ :hover = mouse encima
+ :active = cuando esta prencionando click
+ :focus= mientras el elemento tiene el foco click tab
+ :visited = enlace ya visitado
+ :checked: radio o check marcado
+ :disable = elemento deshabilitado
+ :first-child: primer hijo del elemento
+ :last-child: ultimo elemento
+ : nth-child(n) por patron numerico
+
+
+ pseudo elementos
+    ::before: injecta contneido antes
+    ::after : lo mismo pero despues
+    :: first-letter
+
+ */
+
+h2 {
+
+
+}
+
+.javaimagen{
+    float: right;
+    margin: 15px;
+
+}
+
