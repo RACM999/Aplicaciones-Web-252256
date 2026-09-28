@@ -1,0 +1,34 @@
+package com.example.NebulaMusic.service;
+
+import com.example.NebulaMusic.Model.Usuario;
+import org.springframework.stereotype.Service;
+
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
+@Service
+
+
+public class UsuarioService {
+    private final Map<String, Usuario> usuarios = new ConcurrentHashMap<>();
+
+    public void registrar (Usuario usuario){
+        usuarios.put(usuario.getCorreo(), usuario);
+
+
+    }
+
+    public boolean existecorreo(String correo){
+
+        return usuarios.containsKey(correo);
+
+    }
+
+
+    public boolean autenticar(String correo, String contrasenia){
+        Usuario usuario = usuarios.get(correo);
+        return usuario != null && usuario.getContrasenia().equals(contrasenia);
+
+    }
+
+}
