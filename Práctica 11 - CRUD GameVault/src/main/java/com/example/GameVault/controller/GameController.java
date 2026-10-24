@@ -39,13 +39,13 @@ public class GameController {
     @GetMapping({"/", "/juegos"})
     public String juegos(Model model){
         model.addAttribute("juegos", this.juegoService.listarTodos());
-        return "redirect:/";
+        return "juegos";
 
 
     }
     @GetMapping({"/juegos/nuevo"})
     public String mostrarFormulario(Model model){
-        model.addAttribute("juegos", new Juego());
+        model.addAttribute("juego", new Juego());
         return "formulario";
 
 

@@ -26,7 +26,7 @@ public class Usuario {
     private String email;
 
     @Column(nullable = false)
-    private String cotrasenia;
+    private String contrasenia;
 
 
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)

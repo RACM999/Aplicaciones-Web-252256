@@ -33,19 +33,31 @@ public class JuegoService {
     }
 
 
-    public void guardarJuego(Juego juego, MultipartFile portada){
-        String nombreArchivo = "default.png"; // Imagen por defecto si no suben nada
+//    public void guardarJuego(Juego juego, MultipartFile portada){
+//        String nombreArchivo = "default.png"; // Imagen por defecto si no suben nada
+//
+//
+//        // Verificamos si el archivo no está vacío
+//        if (!portada.isEmpty()) {
+//            nombreArchivo = guardarImagenCloudinary(portada);
+//        }
+//
+//
+//        juego.setPortadaurl(nombreArchivo);
+//        juegoRepository.save(juego);
+//    }
 
 
-        // Verificamos si el archivo no está vacío
-        if (!portada.isEmpty()) {
-            nombreArchivo = guardarImagenCloudinary(portada);
+    public void guardarJuego(Juego juego, MultipartFile portada) {
+        if (portada != null && !portada.isEmpty()) {
+            juego.setPortadaurl(guardarImagenCloudinary(portada));
+        } else if (juego.getPortadaurl() == null) {
+            juego.setPortadaurl("default.png");
         }
-
-
-        juego.setPortadaurl(nombreArchivo);
         juegoRepository.save(juego);
     }
+
+
 
 
     public String guardarImagenEnProyecto(MultipartFile portada){
